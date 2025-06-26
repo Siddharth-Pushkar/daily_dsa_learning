@@ -14,6 +14,7 @@ public class stringsop {
         edited = name.trim();
         edited = name.replace("e","3");
         editod = name.indexOf("e",12);
+        edited = name.repeat(5);
         System.out.println(edited);
         System.out.println(editod);
 
