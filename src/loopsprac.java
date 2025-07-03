@@ -2,12 +2,12 @@ public class loopsprac {
 
     public static void main(String[] args) {
 
-        int numup = 0;
+        int numup;
 
-        for (int i = 0; i != 10; i++){
-            for (numup = 0; numup<=i;){
+        for (int i = 0; i != 12; i++){
+            for (numup = 10; numup>=i;){
                 System.out.print(numup);
-                numup++;
+                numup--;
             }
             System.out.println();
         }
