@@ -4,10 +4,11 @@ public class loopsprac {
 
         char staro ;
         staro = '*';
-        int run;
+        int dim1;
+        int dim2;
 
-        for (run=0; run!=5; run++){
-            System.out.print(staro);
+        for (dim1=0; dim1!=5; dim1++){
+
         }
     }
 }
