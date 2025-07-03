@@ -2,13 +2,15 @@ public class loopsprac {
 
     public static void main(String[] args) {
 
-        char staro ;
-        staro = '*';
-        int dim1;
-        int dim2;
+        int numup;
 
-        for (dim1=0; dim1!=5; dim1++){
+        for (int i = 0; i < 10; ){
 
+            for (numup = 0; numup != 10; numup++) {
+                System.out.print(numup);
+            }
+            System.out.println();
+            i++;
         }
     }
 }
