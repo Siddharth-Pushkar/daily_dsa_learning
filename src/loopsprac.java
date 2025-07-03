@@ -5,9 +5,9 @@ public class loopsprac {
         int numup;
 
         for (int i = 0; i != 12; i++){
-            for (numup = 10; numup>=i;){
-                System.out.print(numup);
-                numup--;
+            for (int j = 10; j>=i; j--){
+                System.out.print("*");
+
             }
             System.out.println();
         }
