@@ -31,7 +31,12 @@ public class loopsprac {
         }
 
 
-
+        for (int i6 = 0; i6 !=10; i6++){
+            for (int j4 = 1; j4<=i6; j4++){
+                System.out.print(i6);
+            }
+            System.out.println();
+        }
 
 
         for (int i1 = 0; i1 <=20; i1++){
