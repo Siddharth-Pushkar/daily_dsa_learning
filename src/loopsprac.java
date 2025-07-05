@@ -12,5 +12,10 @@ public class loopsprac {
             System.out.println();
         }
 
+        for (int i1 = 0; i1 <=20; i1++){
+            if (i1 % 2 == 0){
+                System.out.print(i1+" ");
+            }
+        }
     }
 }
