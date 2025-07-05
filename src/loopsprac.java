@@ -20,6 +20,17 @@ public class loopsprac {
             System.out.println();
         }
 
+        for (int i5 = 0; i5 != 6; i5++){
+            for (int j3 = 1; j3 <= i5; j3++){
+                for (int k = 1; k != j3; k++){
+                    System.out.print(k);
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+
+
 
 
 
