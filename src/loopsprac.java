@@ -38,7 +38,6 @@ public class loopsprac {
             System.out.println();
         }
 
-
         for (int i1 = 0; i1 <=20; i1++){
             if (i1 % 2 == 0) {
                 System.out.print(i1 + " ");
@@ -53,5 +52,21 @@ public class loopsprac {
             sum = sum + i2;
         }
         System.out.println("the sum is " +sum);
+
+
+        int checko = 44;
+        int uu = 44 % 4;
+        System.out.println(uu);
+
+        int numch = 17;
+
+        for (int i10 = 2; i10 <= numch-1; i10++ ) {
+            if (numch % i10 == 0) {
+                System.out.println(numch + " is not a prime number due to " + i10);
+                break;
+            } if (i10 == numch-1){
+                System.out.println(numch + " is a prime number");
+            }
+        }
     }
 }
