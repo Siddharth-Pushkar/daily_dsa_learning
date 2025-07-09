@@ -91,5 +91,13 @@ public class loopsprac {
             w--;
         }
 
+        int w1 = 0;
+        while (w1<=50) {
+            if (w1 % 2 == 0){
+                System.out.println(w1);
+            }
+            w1++;
+        }
+
     }
 }
