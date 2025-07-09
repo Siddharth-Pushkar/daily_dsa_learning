@@ -68,5 +68,9 @@ public class loopsprac {
                 System.out.println(numch + " is a prime number");
             }
         }
+
+
+
+        for
     }
 }
