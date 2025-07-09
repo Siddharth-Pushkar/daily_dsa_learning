@@ -70,7 +70,22 @@ public class loopsprac {
         }
 
 
+        int w = 0;
+        while (w <=10){
 
-        for
+            System.out.println(w);
+            w++;
+        }
+
+        w = 0;
+
+        while (w <= 10){
+            System.out.print(w+" ");
+            w++;
+        }
+
+        while (w <= 0) {
+
+        }
     }
 }
