@@ -83,9 +83,13 @@ public class loopsprac {
             System.out.print(w+" ");
             w++;
         }
+        System.out.println();
 
-        while (w <= 0) {
-
+        w = 10;
+        while (w >= 0) {
+            System.out.print(w+" ");
+            w--;
         }
+
     }
 }
