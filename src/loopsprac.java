@@ -99,5 +99,14 @@ public class loopsprac {
             w1++;
         }
 
+
+        int oop1 = 0;
+        int oop22 = 0;
+        while (oop22<=50) {
+            oop1 = oop1 + oop22;
+            oop22++;
+        }
+        System.out.println(oop1);
+
     }
 }
