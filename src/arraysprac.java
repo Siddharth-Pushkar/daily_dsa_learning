@@ -15,10 +15,8 @@ public class arraysprac {
 
         for (int i = 0; i < arr.length; i++)
         {
-            System.out.print(arr[i]);
+            System.out.println(arr[i]);
         }
-
-        System.out.println(arr);
 
         int [] marks = {10,20,30,40,50};
 
