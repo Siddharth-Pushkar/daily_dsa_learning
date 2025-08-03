@@ -27,5 +27,30 @@ public class arraysprac {
 
         int [] marks = {10,20,30,40,50};
 
+        System.out.println(marks[3]);
+
+        int max = arr[0];
+        for (int jj = 0; jj < arr.length; jj++){
+            if (arr[jj] > max){
+                max = arr[jj];
+            }
+        }
+        System.out.println(max);
+
+
+        int target = 20;
+        boolean found = false;
+
+        for (int ii = 0; ii < arr.length; ii++){
+            if (target == arr[ii]){
+                found = true;
+                System.out.println(target+" exist in the array at the index of "+ ii);
+                break;
+            }
+        }
+        if (found == false){
+            System.out.println(target+" does not exist in the array");
+        }
+
     }
 }
