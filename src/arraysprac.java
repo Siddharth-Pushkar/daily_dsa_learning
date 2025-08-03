@@ -52,5 +52,9 @@ public class arraysprac {
             System.out.println(target+" does not exist in the array");
         }
 
+        for (int i1; ){
+
+        }
+
     }
 }
