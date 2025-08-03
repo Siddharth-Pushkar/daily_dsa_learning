@@ -13,10 +13,17 @@ public class arraysprac {
         arr [8] = 9;
         arr [9] = 10;
 
+
+        int sum = 0;
         for (int i = 0; i < arr.length; i++)
         {
             System.out.println(arr[i]);
         }
+
+        for (int j=0; j< arr.length; j++){
+            sum += arr[j];
+        }
+        System.out.println(sum);
 
         int [] marks = {10,20,30,40,50};
 
