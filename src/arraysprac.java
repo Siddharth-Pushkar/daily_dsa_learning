@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class arraysprac {
     public static void main(String[] args) {
 
@@ -52,8 +54,28 @@ public class arraysprac {
             System.out.println(target+" does not exist in the array");
         }
 
-        for (int i1; ){
+//        for (int i2 = marks.length; i2>=0; i2-- ){
+//
+//            System.out.println(marks[i2]);
+//        }
 
+        System.out.println(marks.length);
+
+        for (int i2 = marks.length-1; i2 >= 0; i2--){
+            System.out.println(marks[i2]);
+        }
+
+        int [] marks_2 = new int[5];
+        int index2 = 0;
+
+        for (int i3 = marks.length-1; i3 >=0; i3--){
+            marks_2 [index2] = marks[i3];
+            index2++;
+        }
+        System.out.println("Array Update complete");
+        System.out.println("This is your second array");
+        for (index2 = 0; index2 < marks_2.length; index2++){
+            System.out.println(marks_2[index2]);
         }
 
     }
