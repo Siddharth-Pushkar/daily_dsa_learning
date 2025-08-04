@@ -78,5 +78,21 @@ public class arraysprac {
             System.out.println(marks_2[index2]);
         }
 
+        int [] numbers1 = {1,3,5,7,9,11};
+        int [] numbers2 = {4,8,2,98,3,7,3,7,3,6};
+        boolean issorted = true;
+
+        for (int i4 = 1; i4 < numbers2.length; i4++){
+            if (numbers2[i4] < numbers2[i4-1]){
+                issorted = false;
+            }
+        }
+
+        if (issorted == false){
+            System.out.println("The Array is not sorted");
+        } else {
+            System.out.println("Array is sorted");
+        }
+
     }
 }
