@@ -26,5 +26,26 @@ public class arrays2d {
             System.out.println();
         }
 
+        int sum = 0;
+
+        for (int i1 =0; i1 < dirmatrix.length; i1++ ){
+            for (int j1 = 0; j1 < dirmatrix[i1].length; j1++){
+                sum += dirmatrix[i1][j1];
+            }
+        }
+
+        System.out.println("The sum of all the elements in the matrix is "+sum);
+
+
+        int sum1 = 0;
+
+        for (int i2 =0; i2 < dirmatrix.length; i2++ ){
+            for (int j2 = 0; j2 < dirmatrix[i2].length; j2++){
+                System.out.println(sum1);
+            }
+            sum = 0;
+        }
+
+
     }
 }
