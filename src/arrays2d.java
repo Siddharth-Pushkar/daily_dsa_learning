@@ -66,5 +66,17 @@ public class arrays2d {
         System.out.println("The current Min is "+min);
 
 
+        int target = 1;
+
+        for (int i4 = 0; i4 < dirmatrix.length; i4++ ){
+            for (int j4 = 0; j4 < dirmatrix[i4].length; j4++){
+                if (dirmatrix[i4][j4] == target){
+                    System.out.println(target+" is found on the position of "+ i4+" "+j4);
+                    break;
+                }
+            }
+        }
+
+
     }
 }
