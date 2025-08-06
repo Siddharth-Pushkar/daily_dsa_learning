@@ -49,16 +49,21 @@ public class arrays2d {
 
 
         int max = dirmatrix[0][0];
+        int min = dirmatrix[0][0];
 
 
         for (int i3 = 0; i3 < dirmatrix.length; i3++ ){
             for (int j3 = 0; j3 < dirmatrix[i3].length; j3++){
+                if (min > dirmatrix[i3][j3]){
+                    min = dirmatrix[i3][j3];
+                }
                 if (max < dirmatrix[i3][j3]) {
                     max = dirmatrix[i3][j3];
                 }
             }
         }
         System.out.println("The current Max is "+max);
+        System.out.println("The current Min is "+min);
 
 
     }
