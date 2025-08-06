@@ -43,8 +43,20 @@ public class arrays2d {
             for (int j2 = 0; j2 < dirmatrix[i2].length; j2++){
                 sum1 += dirmatrix[i2][j2];
             }
-            System.out.println(sum1);
+            System.out.println(sum1 + " row " + i2);
             sum1 = 0;
+        }
+
+
+        int max = 0;
+
+        for (int i3 = 0; i3 < dirmatrix.length; i3++ ){
+            for (int j3 = 0; j3 < dirmatrix[i3].length; j3++){
+                if (dirmatrix[i3-1][j3-1] < dirmatrix[i3][j3]) {
+                    max = dirmatrix[i3][j3];
+                    System.out.println(max);
+                }
+            }
         }
 
 
