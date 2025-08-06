@@ -77,6 +77,13 @@ public class arrays2d {
             }
         }
 
+        for (int i5 = 0; i5 < dirmatrix.length; i5++ ){
+            for (int j5 = 0; j5 < dirmatrix[i5].length; j5++){
+                System.out.print(dirmatrix[j5][i5]+" ");
+            }
+            System.out.println();
+        }
+
 
     }
 }
