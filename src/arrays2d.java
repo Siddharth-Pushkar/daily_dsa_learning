@@ -41,9 +41,10 @@ public class arrays2d {
 
         for (int i2 =0; i2 < dirmatrix.length; i2++ ){
             for (int j2 = 0; j2 < dirmatrix[i2].length; j2++){
-                System.out.println(sum1);
+                sum1 += dirmatrix[i2][j2];
             }
-            sum = 0;
+            System.out.println(sum1);
+            sum1 = 0;
         }
 
 
