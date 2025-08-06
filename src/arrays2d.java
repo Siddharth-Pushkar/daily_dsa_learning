@@ -19,5 +19,12 @@ public class arrays2d {
         indmatrix [2][1] = 3;
         indmatrix [2][2] = 3;
 
+        for (int i =0; i < dirmatrix.length; i++ ){
+            for (int j = 0; j < dirmatrix[i].length; j++){
+                System.out.print(dirmatrix[i][j]+" ");
+            }
+            System.out.println();
+        }
+
     }
 }
