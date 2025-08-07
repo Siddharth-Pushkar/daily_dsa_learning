@@ -94,5 +94,18 @@ public class arraysprac {
             System.out.println("Array is sorted");
         }
 
+
+        int max2 = arr[0];
+        int secmax= 0;
+
+        for (int i5 = 0; i5 < arr.length; i5++){
+            if (max2 < arr[i5]){
+                secmax = max2;
+                max2 = arr[i5];
+            }
+        }
+
+        System.out.println(secmax);
+
     }
 }
