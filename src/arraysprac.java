@@ -107,5 +107,9 @@ public class arraysprac {
 
         System.out.println(secmax);
 
+
+
+
+
     }
 }
