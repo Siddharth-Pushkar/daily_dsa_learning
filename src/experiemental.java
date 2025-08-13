@@ -32,19 +32,8 @@ class experiemental {
 
         int index = -1;
 
-        for (int i1 =0;i1<arr2.length; i1++){
-            if (arr2[i1] == 0){
-                index = i1;
-                for (int j1 = index; j1<arr2.length-1;j1++){
-                    arr2[i1] = arr2[i1 + 1];
-                }
-                arr2[arr2.length - 1] = 0;
-            }
-        }
 
-        for (int j = 0; j < arr2.length; j++){
-            System.out.print(arr2[j]+" ");
-        }
+
 
 
     }
