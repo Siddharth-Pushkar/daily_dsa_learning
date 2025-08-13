@@ -95,17 +95,30 @@ public class arraysprac {
         }
 
 
-        int max2 = arr[0];
-        int secmax= 0;
+//        int max2 = arr[0];
+//        int secmax= 0;
+//
+//        for (int i5 = 0; i5 < arr.length; i5++){
+//            if (max2 < arr[i5]){
+//                secmax = max2;
+//                max2 = arr[i5];
+//            }
+//        }
+//
+//        System.out.println(secmax);
+//
 
-        for (int i5 = 0; i5 < arr.length; i5++){
-            if (max2 < arr[i5]){
-                secmax = max2;
-                max2 = arr[i5];
-            }
-        }
+        int [][] mart1 = {
+                {2,4,6},
+                {8,10,12}
+        };
 
-        System.out.println(secmax);
+        int [][] mart2 = {
+                {3,6,9},
+                {12,15,18}
+        };
+
+
 
 
 
