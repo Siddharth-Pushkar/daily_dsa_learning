@@ -57,9 +57,19 @@ class experiemental {
                 {12,15,18}
         };
 
+        int [][] addi1 = new int[2][3];
+
 
         for (int ii = 0; ii<mart1.length;ii++ ){
             for (int jj = 0; jj< mart1[ii].length;jj++){
+
+                for (int ii1 = 0; ii1<mart2.length; ii1++){
+                    for (int jj1 = 0; jj1<mart2[ii1].length; jj1++){
+
+
+
+                    }
+                }
 
 
             }
