@@ -108,15 +108,6 @@ public class arraysprac {
 //        System.out.println(secmax);
 //
 
-        int [][] mart1 = {
-                {2,4,6},
-                {8,10,12}
-        };
-
-        int [][] mart2 = {
-                {3,6,9},
-                {12,15,18}
-        };
 
 
 

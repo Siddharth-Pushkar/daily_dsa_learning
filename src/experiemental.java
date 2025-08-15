@@ -42,11 +42,28 @@ class experiemental {
                 arr2[arr2.length - 1] = target;
             }
         }
-
-
-
         for (int i1 = 0; i1 < arr2.length; i1++){
             System.out.print(arr2[i1]+ " ");
+        }
+
+
+
+        int [][] mart1 = {
+                {2,4,6},
+                {8,10,12}
+        };
+        int [][] mart2 = {
+                {3,6,9},
+                {12,15,18}
+        };
+
+
+        for (int ii = 0; ii<mart1.length;ii++ ){
+            for (int jj = 0; jj< mart1[ii].length;jj++){
+
+
+            }
+
         }
 
 
