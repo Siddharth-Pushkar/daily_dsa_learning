@@ -48,6 +48,9 @@ class experiemental {
 
 
 
+
+
+
         int [][] mart1 = {
                 {2,4,6},
                 {8,10,12}
@@ -66,19 +69,9 @@ class experiemental {
                 for (int ii1 = 0; ii1<mart2.length; ii1++){
                     for (int jj1 = 0; jj1<mart2[ii1].length; jj1++){
 
-
-
                     }
                 }
-
-
             }
-
         }
-
-
-
-
-
     }
 }
