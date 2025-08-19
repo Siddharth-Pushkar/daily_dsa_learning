@@ -46,6 +46,8 @@ class experiemental {
             System.out.print(arr2[i1]+ " ");
         }
 
+        System.out.println();
+
 
 
 
@@ -53,25 +55,35 @@ class experiemental {
 
         int [][] mart1 = {
                 {2,4,6},
-                {8,10,12}
+                {8,10,12},
+                {47,36,8}
         };
         int [][] mart2 = {
                 {3,6,9},
-                {12,15,18}
+                {12,15,18},
+                {7,2,8}
         };
 
-        int [][] addi1 = new int[2][3];
+        int [][] addi1 = new int[mart1.length][mart1[0].length];
 
 
-        for (int ii = 0; ii<mart1.length;ii++ ){
-            for (int jj = 0; jj< mart1[ii].length;jj++){
-
-                for (int ii1 = 0; ii1<mart2.length; ii1++){
-                    for (int jj1 = 0; jj1<mart2[ii1].length; jj1++){
-
-                    }
-                }
+        for (int ii = 0; ii<mart1.length; ii++){
+            for (int jj = 0; jj<mart1[ii].length; jj++){
+                addi1[ii][jj] = mart1[ii][jj] + mart2[ii][jj];
             }
         }
+
+        for (int ii1 = 0; ii1<addi1.length; ii1++){
+            for (int jj1 = 0; jj1<addi1[ii1].length; jj1++){
+                System.out.print(addi1[ii1][jj1]+" ");
+            }
+
+            System.out.println();
+        }
+
+
+
+
+
     }
 }
