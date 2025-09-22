@@ -13,8 +13,10 @@ public class stringsagain {
 
         String ss = "some";
         char ch = s.charAt(3);
-        String ss1 = "solar";
+        String ss1 = "soloaro";
         String ss2 = "some";
+
+        for ()
 
         System.out.println();
 
