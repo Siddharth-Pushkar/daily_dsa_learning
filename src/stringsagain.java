@@ -36,6 +36,16 @@ public class stringsagain {
         }
         System.out.println(chin);
 
+        char change = 'p';
+
+        for (int i = 0; i<indoz; i++){
+            che = ss1.charAt(i);
+            if (che == finch){
+                ss1 = ss1.replace(che,change);
+            }
+        }
+        System.out.println(ss1);
+
 
     }
 }
