@@ -16,9 +16,14 @@ public class stringsagain {
         String ss1 = "soloaro";
         String ss2 = "some";
 
-        for ()
+        int indoz = ss1.length();
+        char che;
 
-        System.out.println();
+        for (int i = 0; i<indoz; i++){
+            che = ss1.charAt(i);
+
+            System.out.println(che);
+        }
 
 
     }
