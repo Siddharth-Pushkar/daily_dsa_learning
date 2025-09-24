@@ -25,6 +25,17 @@ public class stringsagain {
             System.out.println(che);
         }
 
+        int chin = 0;
+        char finch = 'o';
+
+        for (int i = 0; i<indoz; i++){
+            che = ss1.charAt(i);
+            if (che == finch){
+                chin++;
+            }
+        }
+        System.out.println(chin);
+
 
     }
 }
