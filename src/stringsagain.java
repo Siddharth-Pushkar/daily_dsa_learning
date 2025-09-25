@@ -47,5 +47,19 @@ public class stringsagain {
         System.out.println(ss1);
 
 
+        String state = "statement";
+        String reversed = "";
+
+        for (int ii = state.length() -1; ii>=0; ii--){
+            reversed += state.charAt(ii);
+        }
+
+        System.out.println(reversed);
+
+
+
+
+
+
     }
 }
