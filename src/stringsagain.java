@@ -57,7 +57,6 @@ public class stringsagain {
         System.out.println(reversed);
 
 
-
         String state1 = "racecar";
         String reversedop = "";
 
@@ -73,6 +72,33 @@ public class stringsagain {
         } else {
             System.out.println(state1+" is not a palindrome");
         }
+
+        int vovalc = 0;
+
+        for (int o = 0; o < state1.length(); o++){
+            char op= state1.charAt(o);
+            switch (op){
+                case 'a':
+                    vovalc++;
+                    break;
+                case 'e':
+                    vovalc++;
+                    break;
+                case 'i':
+                    vovalc++;
+                    break;
+                case 'o':
+                    vovalc++;
+                    break;
+                case 'u':
+                    vovalc++;
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        System.out.println(state1+" has "+vovalc+" vowels");
 
 
 
