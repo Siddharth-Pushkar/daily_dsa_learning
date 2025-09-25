@@ -97,7 +97,6 @@ public class stringsagain {
                     break;
             }
         }
-
         System.out.println(state1+" has "+vovalc+" vowels");
 
 
