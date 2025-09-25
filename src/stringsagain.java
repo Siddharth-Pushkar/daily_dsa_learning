@@ -58,6 +58,24 @@ public class stringsagain {
 
 
 
+        String state1 = "racecar";
+        String reversedop = "";
+
+        for (int iii = state1.length()- 1; iii>=0;iii--){
+            reversedop += state1.charAt(iii);
+        }
+
+        System.out.println(reversedop);
+
+        if (reversedop == state1){
+            System.out.println(state1+" is a palindrome");
+
+        } else {
+            System.out.println(state1+" is not a palindrome");
+        }
+
+
+
 
 
 
