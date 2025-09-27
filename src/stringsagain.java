@@ -100,6 +100,18 @@ public class stringsagain {
         System.out.println(state1+" has "+vovalc+" vowels");
 
 
+        String stra = "listen";
+        String strb = "silent";
+
+        for (int iio = 0; iio < stra.length(); iio++){
+            for (int jjo = 0; jjo<strb.length(); jjo++){
+                if (stra.charAt(iio) == strb.charAt(jjo)){
+                    break;
+                }
+            } so
+        }
+
+
 
 
 
