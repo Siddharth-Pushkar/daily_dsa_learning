@@ -108,7 +108,7 @@ public class stringsagain {
                 if (stra.charAt(iio) == strb.charAt(jjo)){
                     break;
                 }
-            } so
+            }
         }
 
 
