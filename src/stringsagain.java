@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class stringsagain {
 
     public static void main(String[] args) {
@@ -114,7 +116,20 @@ public class stringsagain {
 
         if (stra.length()!=strb.length()){
             System.out.println("They are not anagrams");
+            return;
+        }
 
+        char[] arra = stra.toCharArray();
+        char[] arrb = strb.toCharArray();
+
+        Arrays.sort(arra);
+        Arrays.sort(arrb);
+
+        if (Arrays.equals(arra,arrb)){
+            System.out.println("these are an anagram");
+        }
+        else {
+            System.out.println("these are not an anagram");
         }
 
 
