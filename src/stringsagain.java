@@ -112,6 +112,12 @@ public class stringsagain {
         }
 
 
+        if (stra.length()!=strb.length()){
+            System.out.println("They are not anagrams");
+
+        }
+
+
 
 
 
