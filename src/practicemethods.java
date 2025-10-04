@@ -7,6 +7,11 @@ public class practicemethods {
         System.out.println("An adult");
     }
 
+
+
+
+
+
     public static void main(String[] args) {
         takinginto(16);
     }
