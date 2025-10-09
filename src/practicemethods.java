@@ -17,12 +17,12 @@ public class practicemethods {
     public static int sumnum(int num3) {
         if (num3 == 0) return 0;
         int lastdig = num3%10;
-        System.out.println(lastdig + sumnum(num3/10));
+        return lastdig + sumnum(num3/10);
     }
 
     public static void main(String[] args) {
         takinginto(16);
         recurnum(15);
-        System.out.println(sumnum(454850));
+        sumnum(454850);
     }
 }
