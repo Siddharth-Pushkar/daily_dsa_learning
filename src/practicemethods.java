@@ -14,12 +14,10 @@ public class practicemethods {
         recurnum(num2-1);
     }
 
-    public static void sumnum(int num3) {
-        if (num3 == 0) return;
+    public static int sumnum(int num3) {
+        if (num3 == 0) return 0;
         int lastdig = num3%10;
         return lastdig + sumnum(num3/10);
-
-
     }
 
     public static void main(String[] args) {
