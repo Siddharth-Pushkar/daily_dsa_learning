@@ -16,6 +16,9 @@ public class practicemethods {
 
     public static void sumnum(int num3) {
         if (num3 == 0) return;
+        int lastdig = num3%10;
+        return lastdig + sumnum(num3/10);
+
 
     }
 
