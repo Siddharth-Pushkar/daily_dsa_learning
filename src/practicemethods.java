@@ -23,6 +23,6 @@ public class practicemethods {
     public static void main(String[] args) {
         takinginto(16);
         recurnum(15);
-        sumnum(454850);
+        sumnum(45485);
     }
 }
