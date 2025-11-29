@@ -57,8 +57,6 @@ public class condtionsprac {
                 System.out.println("You live no where close to me");
                 break;
         }
-
-
         Scanner urlop = new Scanner(System.in);
 
         System.out.println("Enter your URL here: ");
@@ -71,9 +69,5 @@ public class condtionsprac {
         } else if (urlcheck.endsWith(".in")) {
             System.out.println("It is an Indian Website");
         }
-
-
-
     }
-
 }
