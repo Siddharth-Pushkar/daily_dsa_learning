@@ -1,5 +1,7 @@
 public class arraysmorework {
 
 
-    public static int
+    public static void treversal(int arr []){
+
+    }
 }
