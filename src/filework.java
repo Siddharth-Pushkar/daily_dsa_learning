@@ -1,16 +1,32 @@
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 
 public class filework {
 
+
+    public static void readerop(String s) throws Exception{
+        BufferedReader br = new BufferedReader(new FileReader(s));
+        String line;
+
+        while ((line = br.readLine()) != null) {
+            System.out.println(line);
+        }
+        br.close();
+    }
+
     public static void main(String[] args) {
 
-        File filna = new File("data.txt");
+        String filename = "data.txt";
+
+        File filna = new File(filename);
         if (filna.exists()){
             System.out.println(filna.getName());
             System.out.println(filna.getPath());
             System.out.println(filna.length());
         }
+        readerop(filename);
 
         try{
             if (filna.createNewFile()){
