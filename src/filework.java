@@ -19,14 +19,7 @@ public class filework {
     public static void main(String[] args) throws Exception {
 
         String filename = "data.txt";
-
         File filna = new File(filename);
-        if (filna.exists()){
-            System.out.println(filna.getName());
-            System.out.println(filna.getPath());
-            System.out.println(filna.length());
-        }
-        readerop(filename);
 
         try{
             if (filna.createNewFile()){
@@ -36,6 +29,13 @@ public class filework {
             }
         } catch (IOException e) {
             e.printStackTrace();}
+        if (filna.exists()){
+            System.out.println(filna.getName());
+            System.out.println(filna.getPath());
+            System.out.println(filna.length());
+        }
+        readerop(filename);
+
 
     }
 }
