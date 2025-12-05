@@ -1,7 +1,4 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 public class filework {
@@ -17,6 +14,18 @@ public class filework {
         br.close();
     }
 
+    public static void writerop(String s1, String s2) throws Exception {
+        FileWriter writeo = new FileWriter(s1);
+        writeo.write(s2);
+        writeo.close();
+    }
+
+    public static void writercon(String s3, String s4) throws Exception {
+        FileWriter writeo = new FileWriter(s3,true);
+        writeo.write(s4);
+        writeo.close();
+    }
+
     public static void main(String[] args) throws Exception {
 
         String filename = "data.txt";
@@ -30,6 +39,9 @@ public class filework {
             }
         } catch (IOException e) {
             e.printStackTrace();}
+
+
+        writerop(filename,"This is the line that i want to add in my file today");
 
         Scanner readop = new Scanner(filna);
         while (readop.hasNextLine()){
