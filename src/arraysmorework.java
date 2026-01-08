@@ -1,8 +1,10 @@
 public class arraysmorework {
 
 
-    public static void treversal(int arr []){
+    public static void operations(int arr []){
 
+        System.out.println(arr.length);
+        System.out.println(arr[arr.length-1]);
 
     }
 
