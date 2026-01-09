@@ -17,7 +17,7 @@ public class varargandprac {
 
         Scanner s = new Scanner(System.in);
         int innum = s.nextInt();
-        boolean checker = isprime(innum);
+        boolean checker = isarmstrong(innum);
         System.out.println(checker);
 
     }
@@ -33,10 +33,21 @@ public class varargandprac {
             if (innum % c == 0){
                 return false;
             }
-
             c++;
-
         }
         return c == innum;
+    }
+
+    static boolean isarmstrong(int nn){
+        int cc = nn;
+        int cc2 = 0;
+
+        while (cc>0){
+            int rem = cc %10;
+            cc = cc/10;
+            cc2 = cc2 + (rem*rem*rem);
+
+        }
+        return cc2 == nn;
     }
 }
