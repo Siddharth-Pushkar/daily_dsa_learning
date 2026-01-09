@@ -24,15 +24,17 @@ public class varargandprac {
 
     static boolean isprime(int innum) {
 
-        int c = 0;
+        int c = 2;
 
-        if(innum < 0){
+        if(innum <= 1){
             return false;
         }
         while (c < innum){
-            if (c % innum != 0){
-                return true;
+            if (innum % c == 0){
+                return false;
             }
+
+            c++;
 
         }
         return c == innum;
