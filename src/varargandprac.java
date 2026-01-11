@@ -15,10 +15,11 @@ public class varargandprac {
 //        // this is the multiple variable thing
 
 
-        Scanner s = new Scanner(System.in);
-        int innum = s.nextInt();
-        boolean checker = isarmstrong(innum);
-        System.out.println(checker);
+//        Scanner s = new Scanner(System.in);
+//        int innum = s.nextInt();
+//        boolean checker = isarmstrong(innum);
+//        System.out.println(checker);
+        allarmstrong(100,999);
 
     }
 
@@ -38,12 +39,21 @@ public class varargandprac {
         return c == innum;
     }
 
+
+    static void allarmstrong(int a, int b){
+        for (int i = a; i<=b;i++) {
+            if (isarmstrong(i)){
+                System.out.print(i+" ");
+            }
+        }
+    }
+
     static boolean isarmstrong(int nn){
         int cc = nn;
         int cc2 = 0;
 
         while (cc>0){
-            int rem = cc %10;
+            int rem = cc % 10;
             cc = cc/10;
             cc2 = cc2 + (rem*rem*rem);
 
