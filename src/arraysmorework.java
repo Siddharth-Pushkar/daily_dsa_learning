@@ -35,14 +35,9 @@ public class arraysmorework {
         }
 
         oputput(arr2);
-
-
-
-
         for (int i = 0; i < arr1.length; i++) {
             System.out.println(arr1[i]);
         }
-
         System.out.print(Arrays.toString(arr1));
 
     }
