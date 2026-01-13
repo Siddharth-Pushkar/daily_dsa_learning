@@ -13,9 +13,11 @@ public class arraysmorework {
 
     static void oputput(int ll[]){
         for (int i = 0; i < ll.length; i++) {
-            System.out.println();
+
             System.out.print(ll[i]+" ");
         }
+
+        System.out.println();
     }
 
     public static void main(String[] args) {
