@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class arraysmorework {
 
 
-    static void operations(int arr []){
+    static void operations(int[] arr){
 
         System.out.println(arr.length);
         System.out.println(arr[arr.length-1]);
@@ -12,9 +12,9 @@ public class arraysmorework {
     }
 
     static void oputput(int ll[]){
-        for (int i = 0; i < ll.length; i++) {
+        for (int j : ll) {
 
-            System.out.print(ll[i]+" ");
+            System.out.print(j + " ");
         }
 
         System.out.println();
@@ -23,7 +23,7 @@ public class arraysmorework {
     public static void main(String[] args) {
 
         int[] arr1 = new int[5];
-        arr1[0]= 25;
+        arr1[0]=25;
         arr1[1]=54;
         arr1[2]=46;
         arr1[3]=86;
