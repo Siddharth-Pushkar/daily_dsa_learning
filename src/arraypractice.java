@@ -24,6 +24,14 @@ public class arraypractice {
         return anoi;
     }
 
+    static int [] arrmultor(int [] anoi, int multor){
+        // Now for a multipler of each element which will use other method as well
+        for (int jj = 0; jj <anoi.length; jj++){
+            anoi[jj] = anoi[jj] * multor;
+        }
+        return anoi;
+    }
+
     public static void main(String[] args) {
         Scanner intop = new Scanner(System.in);     // Scanner
 
@@ -34,7 +42,12 @@ public class arraypractice {
 
         System.out.print("Enter your amount you want to increase: ");
         int pluser = intop.nextInt();
-        anoi =  arradder(anoi, pluser);
+        arradder(anoi, pluser);
+        System.out.println(Arrays.toString(anoi));
+
+        System.out.print("Enter your amount you want to multipy: ");
+        int multor = intop.nextInt();
+        arrmultor(anoi, multor);
         System.out.println(Arrays.toString(anoi));
 
     }
