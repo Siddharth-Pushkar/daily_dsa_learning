@@ -9,11 +9,11 @@ public class arraypractice {
     public static void main(String[] args) {
 
 
-        Scanner intop = new Scanner(System.in);
+        Scanner intop = new Scanner(System.in);  // Scanner
 
 
 
-        int [] arr1 = new int[5];
+        int [] arr1 = new int[5]; // Input taker
 
         for (int i = 0; i< arr1.length; ++i ){
             int num = intop.nextInt();
