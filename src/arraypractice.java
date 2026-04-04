@@ -27,7 +27,7 @@ public class arraypractice {
         return anoi;
     }
 
-    static void findmax(int [] anoi){
+    static void findmaxmin(int [] anoi){
         // To find max element in the array.
         int maxo = 0;
         for (int i : anoi) {
@@ -36,6 +36,15 @@ public class arraypractice {
             }
         }
         System.out.println("Here is the max element in the array: "+maxo);
+
+        // To find mini element in the array.
+        int mini = 0;
+        for (int i : anoi) {
+            if (i < mini) {
+                mini = i;
+            }
+        }
+        System.out.println("Here is the min element in the array: "+mini);
     }
 
 
@@ -58,7 +67,19 @@ public class arraypractice {
         arrmultor(anoi, multor);
         System.out.println(Arrays.toString(anoi));
 
-        findmax(anoi);
+        findmaxmin(anoi);
+
+
+        int ecount = 0;
+        int ocount = 0;
+        for (int io : anoi){
+            if (io%2 == 0){
+                ecount++;
+            }
+            else {
+                ocount++;
+            }
+        }
 
     }
 }
