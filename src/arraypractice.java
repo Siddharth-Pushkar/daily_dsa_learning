@@ -49,9 +49,9 @@ public class arraypractice {
 
 
         int maxo = 0;
-        for (int ii = 0; ii< anoi.length; ii++){
-            if (anoi[ii] > maxo){
-                maxo = anoi[ii];
+        for (int i : anoi) {
+            if (i > maxo) {
+                maxo = i;
             }
         }
         System.out.println("Here is the max element in the array: "+maxo);
