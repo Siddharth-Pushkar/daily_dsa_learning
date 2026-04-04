@@ -27,7 +27,7 @@ public class arraypractice {
         return anoi;
     }
 
-    static void findmaxmin(int [] anoi){
+    static void findmaxmin(int[] anoi){
         // To find max element in the array.
         int maxo = 0;
         for (int i : anoi) {
@@ -38,7 +38,8 @@ public class arraypractice {
         System.out.println("Here is the max element in the array: "+maxo);
 
         // To find mini element in the array.
-        int mini = 0;
+        int mini = anoi[0];
+
         for (int i : anoi) {
             if (i < mini) {
                 mini = i;
@@ -58,6 +59,8 @@ public class arraypractice {
                 ocount++;
             }
         }
+        System.out.println("No. of even numbers: "+ecount);
+        System.out.println("No. of odd numbers: "+ocount);
     }
 
 
