@@ -27,6 +27,17 @@ public class arraypractice {
         return anoi;
     }
 
+    static void findmax(int [] anoi){
+        // To find max element in the array.
+        int maxo = 0;
+        for (int i : anoi) {
+            if (i > maxo) {
+                maxo = i;
+            }
+        }
+        System.out.println("Here is the max element in the array: "+maxo);
+    }
+
 
 
     public static void main(String[] args) {
@@ -47,14 +58,7 @@ public class arraypractice {
         arrmultor(anoi, multor);
         System.out.println(Arrays.toString(anoi));
 
-
-        int maxo = 0;
-        for (int i : anoi) {
-            if (i > maxo) {
-                maxo = i;
-            }
-        }
-        System.out.println("Here is the max element in the array: "+maxo);
+        findmax(anoi);
 
     }
 }
