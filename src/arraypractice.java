@@ -47,6 +47,19 @@ public class arraypractice {
         System.out.println("Here is the min element in the array: "+mini);
     }
 
+    static void enocount(int [] anoi){
+        int ecount = 0;
+        int ocount = 0;
+        for (int io : anoi){
+            if (io%2 == 0){
+                ecount++;
+            }
+            else {
+                ocount++;
+            }
+        }
+    }
+
 
 
     public static void main(String[] args) {
@@ -68,18 +81,7 @@ public class arraypractice {
         System.out.println(Arrays.toString(anoi));
 
         findmaxmin(anoi);
-
-
-        int ecount = 0;
-        int ocount = 0;
-        for (int io : anoi){
-            if (io%2 == 0){
-                ecount++;
-            }
-            else {
-                ocount++;
-            }
-        }
+        enocount(anoi);
 
     }
 }
