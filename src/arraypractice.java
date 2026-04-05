@@ -27,16 +27,18 @@ public class arraypractice {
         return anoi;
     }
 
-    static void findmaxmin(int[] anoi){
+    static int findmax(int[] anoi) {
         // To find max element in the array.
-        int maxo = 0;
+        int maxo = anoi[0];
         for (int i : anoi) {
             if (i > maxo) {
                 maxo = i;
             }
         }
-        System.out.println("Here is the max element in the array: "+maxo);
+        return maxo;
+    }
 
+    static int findmin(int[] anoi){
         // To find mini element in the array.
         int mini = anoi[0];
 
@@ -45,12 +47,21 @@ public class arraypractice {
                 mini = i;
             }
         }
-        System.out.println("Here is the min element in the array: "+mini);
+        return mini;
+    }
+    static class counto {
+        int even;
+        int odd;
     }
 
-    static void enocount(int [] anoi){
+    static counto enocount(int[] anoi){
+
         int ecount = 0;
         int ocount = 0;
+        counto c =  new counto();
+        c.even = ecount;
+        c.odd = ocount;
+
         for (int io : anoi){
             if (io%2 == 0){
                 ecount++;
@@ -59,11 +70,8 @@ public class arraypractice {
                 ocount++;
             }
         }
-        System.out.println("No. of even numbers: "+ecount);
-        System.out.println("No. of odd numbers: "+ocount);
+        return c;
     }
-
-
 
     public static void main(String[] args) {
         Scanner intop = new Scanner(System.in);     // Scanner
@@ -83,8 +91,9 @@ public class arraypractice {
         arrmultor(anoi, multor);
         System.out.println(Arrays.toString(anoi));
 
-        findmaxmin(anoi);
-        enocount(anoi);
+        System.out.println(findmax(anoi));
+        System.out.println(findmin(anoi));
+        System.out.println(enocount(anoi));
 
     }
 }
