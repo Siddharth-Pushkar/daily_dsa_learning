@@ -49,19 +49,16 @@ public class arraypractice {
         }
         return mini;
     }
+
     static class counto {
         int even;
         int odd;
     }
-
     static counto enocount(int[] anoi){
 
         int ecount = 0;
         int ocount = 0;
         counto c =  new counto();
-        c.even = ecount;
-        c.odd = ocount;
-
         for (int io : anoi){
             if (io%2 == 0){
                 ecount++;
@@ -70,6 +67,9 @@ public class arraypractice {
                 ocount++;
             }
         }
+        c.even = ecount;
+        c.odd = ocount;
+
         return c;
     }
 
@@ -93,7 +93,9 @@ public class arraypractice {
 
         System.out.println(findmax(anoi));
         System.out.println(findmin(anoi));
-        System.out.println(enocount(anoi));
+        counto result = enocount(anoi);
+        System.out.println("No. of even elements "+result.even);
+        System.out.println("No. of odd elements "+result.odd);
 
     }
 }
