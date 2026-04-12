@@ -115,6 +115,7 @@ public class arraypractice {
 
     public static void main(String[] args) {
         Scanner intop = new Scanner(System.in);     // Scanner
+        int [] testarr = {3,3,3,88,8,8,5};
 
         System.out.print("Enter your Length of Array here: ");
         int arrnum = intop.nextInt();      // Input taker
@@ -140,10 +141,9 @@ public class arraypractice {
         counto result = enocount(anoi);
         System.out.println("No. of even elements "+result.even);
         System.out.println("No. of odd elements "+result.odd);
+        System.out.println(findSecondmax(anoi));
 
-        int [] aarra = {3,8,5};
 
-        System.out.println(findSecondmax(aarra));
 
     }
 }
