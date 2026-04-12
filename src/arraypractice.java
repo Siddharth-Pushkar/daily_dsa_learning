@@ -50,6 +50,29 @@ public class arraypractice {
         return mini;
     }
 
+    static class minmaxer{
+        int minval;
+        int maxval;
+    }
+
+    static minmaxer findminmax(int[] anoi){
+
+        int mini = anoi[0];
+        int maxo = anoi[0];
+        minmaxer cc = new minmaxer();
+        for (int i : anoi) {
+            if (i < mini) {
+                mini = i;
+            }
+            else if (i > maxo) {
+                maxo = i;
+            }
+        }
+        cc.maxval = maxo;
+        cc.minval = mini;
+        return cc;
+    }
+
     static class counto {
         int even;
         int odd;
@@ -73,6 +96,23 @@ public class arraypractice {
         return c;
     }
 
+
+    static int findSecondmax(int[] anoi){
+        int max1 = anoi[0];
+        int max2 = anoi[0];
+
+        for (int i : anoi){
+            if (i > max1) {
+                max2 = max1;
+                max1 = i;
+            }
+            if (i != max1 && i>max2){
+                max2 = i;
+            }
+        }
+        return max2;
+    }
+
     public static void main(String[] args) {
         Scanner intop = new Scanner(System.in);     // Scanner
 
@@ -93,9 +133,17 @@ public class arraypractice {
 
         System.out.println(findmax(anoi));
         System.out.println(findmin(anoi));
+
+        minmaxer result1 = findminmax(anoi);
+        System.out.println("Maximum number is: "+result1.maxval);
+        System.out.println("Minimum number is: "+result1.minval);
         counto result = enocount(anoi);
         System.out.println("No. of even elements "+result.even);
         System.out.println("No. of odd elements "+result.odd);
+
+        int [] aarra = {3,8,5};
+
+        System.out.println(findSecondmax(aarra));
 
     }
 }
