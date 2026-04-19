@@ -1,9 +1,20 @@
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.Random;
 
 public class arraypractice {
 
-    static  int [] arraybuilder(int arrnum, Scanner intop){
+    static  int [] arraybuilder(int arrnum){
+        int [] arr1 = new int[arrnum];  // Array build
+        Random rand = new Random();
+        for (int i = 0; i< arr1.length; ++i ){
+            int num = rand.nextInt(50)+10;       // Input taker
+            arr1[i] = num;
+        }
+        return arr1;
+    }
+
+    static  int [] arraybuildermal(int arrnum, Scanner intop){
         int [] arr1 = new int[arrnum];  // Array build
         for (int i = 0; i< arr1.length; ++i ){
             System.out.print("Enter "+i+"th number here: ");
@@ -92,7 +103,6 @@ public class arraypractice {
         }
         c.even = ecount;
         c.odd = ocount;
-
         return c;
     }
 
@@ -112,6 +122,28 @@ public class arraypractice {
         }
         return max2;
     }
+    static class reveredarr {
+
+    }
+
+//    static int[] arrrever(int[] anoi){
+//
+//        int temp = 0;
+//        for (int i= )
+//
+//        return anoi;
+//    }
+
+    static int[] arrrever(int[] anoi){
+        int temp = 0;
+        int halfarr = anoi.length/2;
+        for (int i= 0;i<halfarr;i++){
+            temp = anoi[anoi.length-1-i];
+            anoi[anoi.length-1-i] = anoi[i];
+            anoi[i] = temp;
+        }
+        return anoi;
+    }
 
     public static void main(String[] args) {
         Scanner intop = new Scanner(System.in);     // Scanner
@@ -119,7 +151,7 @@ public class arraypractice {
 
         System.out.print("Enter your Length of Array here: ");
         int arrnum = intop.nextInt();      // Input taker
-        int [] anoi = arraybuilder(arrnum , intop);
+        int [] anoi = arraybuilder(arrnum);
         System.out.println(Arrays.toString(anoi));// This is to print the arrays
 
         System.out.print("Enter your amount you want to increase: ");
@@ -143,7 +175,7 @@ public class arraypractice {
         System.out.println("No. of odd elements "+result.odd);
         System.out.println(findSecondmax(anoi));
 
-
+        System.out.println(Arrays.toString(arrrever(anoi)));
 
     }
 }
