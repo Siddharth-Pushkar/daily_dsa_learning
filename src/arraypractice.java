@@ -14,6 +14,16 @@ public class arraypractice {
         return arr1;
     }
 
+    static  int [] arraybuildersmall(int arrnum){
+        int [] arr1 = new int[arrnum];  // Array build
+        Random rand = new Random();
+        for (int i = 0; i< arr1.length; ++i ){
+            int num = rand.nextInt(3);       // Input taker
+            arr1[i] = num;
+        }
+        return arr1;
+    }
+
     static  int [] arraybuildermal(int arrnum, Scanner intop){
         int [] arr1 = new int[arrnum];  // Array build
         for (int i = 0; i< arr1.length; ++i ){
@@ -145,6 +155,20 @@ public class arraypractice {
         return anoi;
     }
 
+    static int[] zeroshifter(int[] anoi0){
+        int temp = 1;
+        for (int i= 0;i< anoi0.length;i++){
+            if (anoi0[i] == 0){
+                temp = anoi0[anoi0.length-1];
+                for (int j = 1; j<anoi0.length;j++){
+                    anoi0[j-1] = anoi0[j];
+                }
+            anoi0[anoi0.length-1] = 0;
+            }
+        }
+        return anoi0;
+    }
+
     public static void main(String[] args) {
         Scanner intop = new Scanner(System.in);     // Scanner
         int [] testarr = {3,3,3,88,8,8,5};
@@ -176,6 +200,13 @@ public class arraypractice {
         System.out.println(findSecondmax(anoi));
 
         System.out.println(Arrays.toString(arrrever(anoi)));
+
+        System.out.print("Enter your Length of small Array here: ");
+        int arrnum2 = intop.nextInt();      // Input taker
+        int [] anoi0 = arraybuildersmall(arrnum2);
+        System.out.println(Arrays.toString(anoi0));
+
+        System.out.println(Arrays.toString(zeroshifter(anoi0)));
 
     }
 }
