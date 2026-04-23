@@ -170,9 +170,22 @@ public class arraypractice {
         return anoi0;
     }
 
+    static int[] dupremove(int[] anoi0){
+        int pos = 1;
+        int ini = anoi0[0];
+
+        for (int i = 0; i<=pos;i++) {
+            if (anoi0[pos] != anoi0[i]){
+                anoi0[pos] = anoi0[i];
+                pos++;
+            }
+        }
+        return anoi0;
+    }
+
     public static void main(String[] args) {
         Scanner intop = new Scanner(System.in);     // Scanner
-        int [] testarr = {3,3,3,88,8,8,5};
+        int[] testarr = {3,3,3,8,8,9,0,0,9};
 
         System.out.print("Enter your Length of Array here: ");
         int arrnum = intop.nextInt();      // Input taker
@@ -207,7 +220,11 @@ public class arraypractice {
         int [] anoi0 = arraybuildersmall(arrnum2);
         System.out.println(Arrays.toString(anoi0));
 
+
         System.out.println(Arrays.toString(zeroshifter(anoi0)));
+        System.out.println("Zeros Shifted");
+
+        System.out.println(Arrays.toString(dupremove(anoi0)));
 
     }
 }
