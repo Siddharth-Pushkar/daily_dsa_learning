@@ -156,15 +156,16 @@ public class arraypractice {
     }
 
     static int[] zeroshifter(int[] anoi0){
-        int temp = 1;
-        for (int i= 0;i< anoi0.length;i++){
-            if (anoi0[i] == 0){
-                temp = anoi0[anoi0.length-1];
-                for (int j = 1; j<anoi0.length;j++){
-                    anoi0[j-1] = anoi0[j];
-                }
-            anoi0[anoi0.length-1] = 0;
+        int pos = 0;
+
+        for (int i = 0; i < anoi0.length; i++){
+            if (anoi0[i] != 0){
+                anoi0[pos] = anoi0[i];
+                pos++;
             }
+        }
+        for (int j = pos; j < anoi0.length;j++){
+            anoi0[j] = 0;
         }
         return anoi0;
     }
