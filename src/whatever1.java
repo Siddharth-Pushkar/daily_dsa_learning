@@ -40,9 +40,14 @@ public class whatever1 {
         arrop[4] = 25;
 
         int [] arrop2 = {2,4,6,8,10};
+        int maxo = arrop[0];
+        for (int i = 0; i<arrop.length; i++){
+            if (arrop[i]>maxo){
+                maxo = arrop[i];
+            }
+        }
 
-
-
+        System.out.println(maxo);
 
 
     }
