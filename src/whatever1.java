@@ -2,6 +2,15 @@ import java.util.Scanner;
 
 public class whatever1 {
 
+
+    public static int adderop(int a){
+        int secretnum = 23;
+
+        int finalrun = a + secretnum;
+
+        return finalrun;
+    }
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -23,6 +32,7 @@ public class whatever1 {
             System.out.println(o);
             o--;
         }
+        System.out.println(adderop(inpo));
 
 
 
