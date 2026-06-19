@@ -2,10 +2,8 @@ import java.util.Scanner;
 
 public class whatever1 {
 
-
     public static int adderop(int a){
         int secretnum = 23;
-
         int finalrun = a + secretnum;
 
         return finalrun;
@@ -33,6 +31,17 @@ public class whatever1 {
             o--;
         }
         System.out.println(adderop(inpo));
+
+        int [] arrop = new int[5];
+        arrop[0] = 5;
+        arrop[1] = 10;
+        arrop[2] = 15;
+        arrop[3] = 20;
+        arrop[4] = 25;
+
+        int [] arrop2 = {2,4,6,8,10};
+
+
 
 
 
