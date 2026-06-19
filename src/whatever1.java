@@ -27,7 +27,7 @@ public class whatever1 {
             System.out.println("Count "+i);
         }
         while (o > 0){
-            System.out.println(o);
+            System.out.print(o+" ");
             o--;
         }
         System.out.println(adderop(inpo));
@@ -41,13 +41,20 @@ public class whatever1 {
 
         int [] arrop2 = {2,4,6,8,10};
         int maxo = arrop[0];
-        for (int i = 0; i<arrop.length; i++){
-            if (arrop[i]>maxo){
+        int max2 = arrop[0];
+        for (int i = 0; i<arrop.length; i++) {
+            if (arrop[i] > maxo) {
+                if (arrop[i] > max2) {
+                    max2 = arrop[i];
+                }
                 maxo = arrop[i];
             }
         }
-
+//        need to figure out the second largest logic, you have done before
         System.out.println(maxo);
+        System.out.println(max2);
+
+
 
 
     }
