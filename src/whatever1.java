@@ -15,6 +15,15 @@ public class whatever1 {
         else {
             System.out.println("The input is negative");
         }
+        int o = inpo;
+        for (int i = 0; i<inpo; i++){
+            System.out.println("Count "+i);
+        }
+        while (o > 0){
+            System.out.println(o);
+            o--;
+        }
+
 
 
     }
