@@ -176,7 +176,7 @@ public class arraypractice {
 
         for (int i = 0; i<=pos;i++) {
             if (anoi0[pos] != anoi0[i]){
-                anoi0[pos] = anoi0[i];
+                anoi0[pos] = anoi0[i]; 
                 pos++;
             }
         }
