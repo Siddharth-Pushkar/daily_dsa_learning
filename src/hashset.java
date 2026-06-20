@@ -18,5 +18,17 @@ public class hashset {
         System.out.println(set1.contains(20));
         System.out.println(set1.size());
 
+
+        HashSet<String> set2 = new HashSet<>();
+
+        set2.add("up");
+        set2.add("mp");
+        set2.add("cp");
+        set2.add("dp");
+        set2.add("op");
+
+        System.out.println(set2.contains("op"));
+        System.out.println(set2.contains("OP"));
+        System.out.println(set2.size());
     }
 }
