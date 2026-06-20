@@ -1,3 +1,4 @@
+import java.util.HashSet;
 import java.util.Scanner;
 import java.lang.Math;
 
@@ -26,11 +27,19 @@ public class exercise5 {
         arr[4]=1;
 
         Scanner inpu = new Scanner(System.in);
-        System.out.print("Enter the number you want to find the frequency of: ");
-        int inpur = inpu.nextInt();
+//        System.out.print("Enter the number you want to find the frequency of: ");
+//        int inpur = inpu.nextInt();
+//
+//        System.out.println("The frequency of that number in the array is :"+ numappr(arr,inpur));
 
-        System.out.println("The frequency of that number in the array is :"+ numappr(arr,inpur));
 
+        HashSet<Integer> setop = new HashSet<>();
+
+        for (int x : arr){
+            setop.add(x);
+        }
+
+        System.out.println("Number of unique values in the arr is: "+ setop.size());
 
 
 
