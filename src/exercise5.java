@@ -42,6 +42,17 @@ public class exercise5 {
         System.out.println("Number of unique values in the arr is: "+ setop.size());
 
 
+        int[] arr2 = {1, 2, 2, 3, 4, 4, 5};
+
+        HashSet<Integer> set2 = new HashSet<>();
+
+        for (int j : arr2){
+            set2.add(j);
+        }
+
+        System.out.println(set2);
+
+
 
 
     }
