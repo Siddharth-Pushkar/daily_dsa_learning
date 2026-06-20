@@ -30,5 +30,18 @@ public class hashset {
         System.out.println(set2.contains("op"));
         System.out.println(set2.contains("OP"));
         System.out.println(set2.size());
+
+
+        HashSet<Integer> set3 = new HashSet<>();
+
+        set3.add(5);
+        set3.add(7);
+        set3.add(4);
+        set3.add(8);
+        set3.add(1);
+
+        set3.remove(5);
+
+        System.out.println(set3.contains(5));
     }
 }
