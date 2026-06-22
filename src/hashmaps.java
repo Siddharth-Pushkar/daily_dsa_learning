@@ -22,7 +22,7 @@ public class hashmaps {
 
 
 //      Counting the categories
-        int[] arr= {1,2,1,1,3,1};
+        int[] arr= {1,2,1,1,3,1,2,2,2,2,2,6,8,4,2};
         HashMap<Integer,Integer> set2 = new HashMap<>();
         int count = 1;
         for (int i = 0; i<arr.length; ++i){
@@ -35,7 +35,17 @@ public class hashmaps {
             }
         }
         System.out.println(set2);
-
+//        Finding the most frequent number
+        int cumax = arr[0];
+        for (int j = 0; j<arr.length; ++j){
+            boolean checko = set2.containsKey(arr[j]);
+            if (checko == true){
+                if (set2.get(arr[j]) > cumax){
+                    cumax = arr[j];
+                }
+            }
+        }
+        System.out.println("The MFN is: "+ cumax);
 
 
 
