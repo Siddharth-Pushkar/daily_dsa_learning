@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class hashmaps {
     public static void main(String[] args) {
@@ -35,6 +36,8 @@ public class hashmaps {
             }
         }
         System.out.println(set2);
+
+
 //        Finding the most frequent number
         int cumax = arr[0];
         for (int j = 0; j<arr.length; ++j){
@@ -46,6 +49,20 @@ public class hashmaps {
             }
         }
         System.out.println("The MFN is: "+ cumax);
+
+
+//        First repeated number
+        HashSet<Integer> set1 = new HashSet<>();
+        for (int ii = 0; ii<arr.length; ++ii){
+            boolean check2 = set1.contains(arr[ii]);
+            if (check2 = true){
+                System.out.println("First repeated number is: "+ arr[0]);
+                break;
+            } else {
+                set1.add(arr[ii]);
+            }
+        }
+
 
 
 
