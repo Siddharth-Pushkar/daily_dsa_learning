@@ -39,24 +39,25 @@ public class hashmaps {
 
 
 //        Finding the most frequent number
-        int cumax = arr[0];
+        int cumax = set2.get(arr[0]);
+        int maxval = arr[0];
         for (int j = 0; j<arr.length; ++j){
             boolean checko = set2.containsKey(arr[j]);
             if (checko == true){
                 if (set2.get(arr[j]) > cumax){
-                    cumax = arr[j];
+                    maxval = arr[j];
                 }
             }
         }
-        System.out.println("The MFN is: "+ cumax);
+        System.out.println("The MFN is: "+maxval);
 
 
 //        First repeated number
         HashSet<Integer> set1 = new HashSet<>();
         for (int ii = 0; ii<arr.length; ++ii){
             boolean check2 = set1.contains(arr[ii]);
-            if (check2 = true){
-                System.out.println("First repeated number is: "+ arr[0]);
+            if (check2 == true){
+                System.out.println("First repeated number is: "+ arr[ii]);
                 break;
             } else {
                 set1.add(arr[ii]);
