@@ -64,6 +64,21 @@ public class hashmaps {
             }
         }
 
+        String oo = "anagram";
+        int counter = 1;
+        HashMap<Character, Integer> set3 = new HashMap<>();
+
+        for (int i = 0; i<oo.length();++i){
+            boolean check2 = set3.containsKey(oo.charAt(i));
+            if (check2 == true){
+                int getvalue = set3.get(oo.charAt(i));
+                set3.put(oo.charAt(i),++getvalue);
+            } else {
+                set3.put(oo.charAt(i),counter);
+            }
+        }
+        System.out.println(set3);
+
 
 
 
