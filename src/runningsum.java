@@ -21,13 +21,10 @@ public class runningsum {
         int[] arr1 = {1,7,3,6,5,6};
         int[] rightsum = new int[arr1.length];
         int[] leftsum = new int[arr1.length];
-
         int pivot = 0;
         int sum = 0;
-        int sumr = 0;
         int currentSum = 0;
         int resultIndex = 0;
-
         for (int i = 0; i<arr1.length; ++i){
             sum = sum + arr1[i];
             leftsum[i] = sum;
@@ -50,7 +47,6 @@ public class runningsum {
                 pivot = i;
             }
         }
-
         System.out.println(pivot);
 
 
