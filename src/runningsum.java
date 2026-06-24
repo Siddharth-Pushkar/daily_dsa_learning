@@ -32,10 +32,6 @@ public class runningsum {
             sum = sum + arr1[i];
             leftsum[i] = sum;
         }
-//        for (int i = arr1.length-1; i>=0; --i){
-//            sumr = sumr + arr1[i];
-//            rightsum[i] = sumr;
-//        }
         for (int i = arr1.length - 1; i >= 0; i--) {
             currentSum += arr1[i];
             rightsum[resultIndex] = currentSum;
@@ -49,6 +45,13 @@ public class runningsum {
         for (int x : leftsum){
             System.out.print(x + " ");
         }
+        for (int i = 0; i<arr1.length; ++i){
+            if (leftsum[i] == rightsum[i+1]){
+                pivot = i;
+            }
+        }
+
+        System.out.println(pivot);
 
 
 
