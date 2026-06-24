@@ -80,6 +80,46 @@ public class hashmaps {
         System.out.println(set3);
 
 
+//        Trying to find the smallest difference as well as the smallest one
+
+        int[] arr2 = {1,2};
+        int[] prices = {7,1,2,6,3,2,5};
+
+        HashMap<Integer,Integer> set5 = new HashMap<>();
+
+        int currentmin = arr2[0];
+        int buypos = 0;
+        int currentprof = 0;
+        int sellpos = 0;
+        int availableprof = 0;
+
+//        Find minimum
+
+        for (int i = 0; i<arr2.length;++i){
+            if (currentmin>arr2[i]){
+                currentmin = arr2[i];
+                buypos = i;
+            }
+        }
+        System.out.println(currentmin);
+
+//        Find profit and feed into hashmaps
+        for (int i = 0; i<arr2.length;++i){
+            int checkop = arr2[i] - currentmin;
+            set5.put(i,checkop);
+        }
+
+//        Find the proper sell position
+        for (int i = buypos; i<set5.size();++i){
+            if (availableprof<set5.get(i)){
+                availableprof = set5.get(i);
+                sellpos = i;
+            }
+        }
+
+        System.out.println(availableprof);
+        System.out.println(currentprof);
+        System.out.println(set5);
 
 
 
