@@ -50,11 +50,5 @@ public class runningsum {
         System.out.println(pivot);
 
 
-
-//        for (int i = 0; i<arr1.length; ++i){
-//
-//            if ()
-//        }
-
     }
 }
