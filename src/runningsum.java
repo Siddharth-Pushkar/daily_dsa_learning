@@ -21,7 +21,7 @@ public class runningsum {
         int[] arr1 = {1,7,3,6,5,6};
         int[] rightsum = new int[arr1.length];
         int[] leftsum = new int[arr1.length];
-        int pivot = -1;
+        int pivot = 0;
         int sum = 0;
         int currentSum = 0;
         int resultIndex = 0;
