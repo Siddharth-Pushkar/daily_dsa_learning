@@ -18,50 +18,44 @@ public class runningsum {
 
         // pivot index
 
-//        int[] arr1 = {1,7,3,6,5,6};
-//        int[] rightsum = new int[arr1.length];
-//        int[] leftsum = new int[arr1.length];
-//        int pivot = -1;
-//        int sum = 0;
-//        int currentSum = 0;
-//        int resultIndex = 0;
-//        for (int i = 0; i<arr1.length; ++i){
-//            sum = sum + arr1[i];
-//            leftsum[i] = sum;
-//        }
-//        for (int i = arr1.length - 1; i >= 0; i--) {
-//            currentSum += arr1[i];
-//            rightsum[i] = currentSum;
-//            resultIndex++;
-//        }
-//
-//        for (int x : rightsum){
-//            System.out.print(x + " ");
-//        }
-//        System.out.println();
-//        for (int x : leftsum){
-//            System.out.print(x + " ");
-//        }
-//
-//        System.out.println();
-//        for (int i = 0; i<arr1.length; ++i){
-//
-//            if (leftsum[i] == rightsum[i]){
-//                pivot = i;
-//                break;
-//            }
-//        }
-//        System.out.println(pivot);
-
-
-
-        int[] nums = {1,7,3,6,5,6};
-        int[] rightsum = new int[nums.length];
-        int sumright = 0;
-
-        for (int i = nums.length-1; i>=0; i--){
-
+        int[] arr1 = {1,7,3,6,5,6};
+        int[] rightsum = new int[arr1.length];
+        int[] leftsum = new int[arr1.length];
+        int pivot = -1;
+        int sum = 0;
+        int currentSum = 0;
+        int resultIndex = 0;
+        for (int i = 0; i<arr1.length; ++i){
+            sum = sum + arr1[i];
+            leftsum[i] = sum;
         }
+        for (int i = arr1.length - 1; i >= 0; i--) {
+            currentSum += arr1[i];
+            rightsum[i] = currentSum;
+            resultIndex++;
+        }
+
+        for (int x : rightsum){
+            System.out.print(x + " ");
+        }
+        System.out.println();
+        for (int x : leftsum){
+            System.out.print(x + " ");
+        }
+
+        System.out.println();
+        for (int i = 0; i<arr1.length; ++i){
+
+            if (leftsum[i] == rightsum[i]){
+                pivot = i;
+                break;
+            }
+        }
+        System.out.println(pivot);
+
+
+
+
 
 
     }
