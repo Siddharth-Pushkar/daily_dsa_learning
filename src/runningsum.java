@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class runningsum {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4};
@@ -17,7 +19,6 @@ public class runningsum {
 
 
         // pivot index
-
         int[] arr1 = {1,7,3,6,5,6};
         int[] rightsum = new int[arr1.length];
         int[] leftsum = new int[arr1.length];
@@ -52,6 +53,18 @@ public class runningsum {
             }
         }
         System.out.println(pivot);
+
+
+        int maxo1 = 0;
+        for (int i = 0; i<arr1.length; i++){
+             if (arr1[i] > maxo1){
+                maxo1 = arr1[i];
+            } else {
+                 arr1[i] = maxo1;
+             }
+        }
+
+        System.out.println(Arrays.toString(arr1));
 
 
 
