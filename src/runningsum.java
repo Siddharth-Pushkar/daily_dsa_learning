@@ -21,7 +21,7 @@ public class runningsum {
         int[] arr1 = {1,7,3,6,5,6};
         int[] rightsum = new int[arr1.length];
         int[] leftsum = new int[arr1.length];
-        int pivot = 0;
+        int pivot = -1;
         int sum = 0;
         int currentSum = 0;
         int resultIndex = 0;
@@ -31,7 +31,7 @@ public class runningsum {
         }
         for (int i = arr1.length - 1; i >= 0; i--) {
             currentSum += arr1[i];
-            rightsum[resultIndex] = currentSum;
+            rightsum[i+1] = currentSum;
             resultIndex++;
         }
 
@@ -42,9 +42,13 @@ public class runningsum {
         for (int x : leftsum){
             System.out.print(x + " ");
         }
+
+        System.out.println();
         for (int i = 0; i<arr1.length; ++i){
-            if (leftsum[i] == rightsum[i+1]){
+
+            if (leftsum[i] == rightsum[i]){
                 pivot = i;
+                break;
             }
         }
         System.out.println(pivot);
