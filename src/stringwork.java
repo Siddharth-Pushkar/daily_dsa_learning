@@ -2,8 +2,6 @@ public class stringwork {
 
     public static void main(String[] args) {
         String str = "Thi$ is @ st4ing that i wa$t to w*rk one";
-
-
         int letters = 0;
         int digits = 0;
         int special = 0;
@@ -28,6 +26,8 @@ public class stringwork {
         System.out.println("Digits: "+digits);
         System.out.println("Special: "+special);
         System.out.println("Spaces: "+spaces);
+
+        String chater = trim(str);
 
     }
 }
