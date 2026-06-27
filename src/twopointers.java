@@ -35,5 +35,8 @@ public class twopointers {
         }
         System.out.println(palin);
         System.out.println(Arrays.toString(arr2));
+
+
+
     }
 }
