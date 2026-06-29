@@ -16,6 +16,8 @@ public class twopointers {
             left++;
             right--;
         }
+
+        // the next working link
         System.out.println(Arrays.toString(arr));
 
 
