@@ -27,7 +27,5 @@ public class stringwork {
         System.out.println("Special: "+special);
         System.out.println("Spaces: "+spaces);
 
-        String chater = trim(str);
-
     }
 }
