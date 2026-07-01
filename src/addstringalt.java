@@ -23,7 +23,7 @@ public class addstringalt {
         }
 
         String merged = new String(result);
-        System.out.printf(merged);
+        System.out.println(merged);
 
 
         String ww1 = "abc";
@@ -31,16 +31,25 @@ public class addstringalt {
 
         int i = 0;
         int j = 0;
-        int o = 0;
 
         int l1 = ww1.length();
         int l2 = ww2.length();
 
          StringBuilder sb = new StringBuilder();
 
+         while (i < l1 && j < l2){
+             sb.append(ww1.charAt(i++));
+             sb.append(ww2.charAt(j++));
+         }
 
+         while (i < l1){
+             sb.append(ww1.charAt(i++));
+         }
+         while (j < l2){
+             sb.append(ww2.charAt(j++));
+         }
 
-
-
+         String res = sb.toString();
+         System.out.println(res);
     }
 }
