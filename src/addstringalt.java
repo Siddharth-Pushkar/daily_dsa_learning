@@ -33,6 +33,12 @@ public class addstringalt {
         int j = 0;
         int o = 0;
 
+        int l1 = ww1.length();
+        int l2 = ww2.length();
+
+         StringBuilder sb = new StringBuilder();
+
+
 
 
 
