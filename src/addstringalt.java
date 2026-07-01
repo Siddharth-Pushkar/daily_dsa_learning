@@ -26,6 +26,14 @@ public class addstringalt {
         System.out.printf(merged);
 
 
+        String ww1 = "abc";
+        String ww2 = "pqrs";
+
+        int i = 0;
+        int j = 0;
+        int o = 0;
+
+
 
 
     }
