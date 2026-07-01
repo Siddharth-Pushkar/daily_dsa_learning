@@ -25,5 +25,8 @@ public class addstringalt {
         String merged = new String(result);
         System.out.printf(merged);
 
+
+
+
     }
 }
