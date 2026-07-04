@@ -56,8 +56,8 @@ public class addstringalt {
 
 
 
-         String s = "abc";
-         String t = "abwkhqoc";
+         String s = "acb";
+         String t = "ahbgdc";
         boolean issub = false;
         int sizer = 0;
 
@@ -80,6 +80,18 @@ public class addstringalt {
         if (sizer == s.length()){
             issub = true;
         }
-        System.out.println(issub);;
+        System.out.println(issub);
+
+        int sp = 0;
+        int tp = 0;
+
+        while (sp < s.length() && tp < t.length()) {
+            if (s.charAt(sp) == t.charAt(tp)) {
+                sp++;
+            }
+            tp++;
+        }
+
+        System.out.println(sp == s.length());
     }
 }
