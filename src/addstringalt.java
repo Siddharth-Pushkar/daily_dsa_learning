@@ -1,3 +1,5 @@
+import java.util.HashSet;
+
 public class addstringalt {
     public static void main(String[] args) {
 
@@ -59,17 +61,17 @@ public class addstringalt {
         boolean issub = false;
         int sizer = 0;
 
-        HashSet<Character> main = new HashSet<>();
+        HashSet<Character> feeder = new HashSet<>();
 
-        for (int i = 0; i<t.length(); i++){
-            boolean chek = main.contains(t.charAt(i));
+        for (int i1 = 0; i1 <t.length(); i1++){
+            boolean chek = feeder.contains(t.charAt(i1));
             if (chek == false){
-                main.add(t.charAt(i));
+                feeder.add(t.charAt(i1));
             }
         }
 
-        for (int j = 0; j<s.length(); j++){
-            boolean cheker = main.contains(s.charAt(j));
+        for (int j1 = 0; j1 <s.length(); j1++){
+            boolean cheker = feeder.contains(s.charAt(j1));
             if (cheker == true){
                 sizer++;
             }
