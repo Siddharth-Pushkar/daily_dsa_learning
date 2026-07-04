@@ -53,6 +53,9 @@ public class addstringalt {
          System.out.println(res);
 
 
+
+         String s = "abc";
+         String t = "abwkhqoc";
         boolean issub = false;
         int sizer = 0;
 
