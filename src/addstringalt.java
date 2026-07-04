@@ -51,5 +51,30 @@ public class addstringalt {
 
          String res = sb.toString();
          System.out.println(res);
+
+
+        boolean issub = false;
+        int sizer = 0;
+
+        HashSet<Character> main = new HashSet<>();
+
+        for (int i = 0; i<t.length(); i++){
+            boolean chek = main.contains(t.charAt(i));
+            if (chek == false){
+                main.add(t.charAt(i));
+            }
+        }
+
+        for (int j = 0; j<s.length(); j++){
+            boolean cheker = main.contains(s.charAt(j));
+            if (cheker == true){
+                sizer++;
+            }
+        }
+
+        if (sizer == s.length()){
+            issub = true;
+        }
+        System.out.println(issub);;
     }
 }
