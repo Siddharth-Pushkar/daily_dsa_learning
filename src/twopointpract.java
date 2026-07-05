@@ -16,13 +16,19 @@ public class twopointpract {
             rr--;
         }
 
+
+        String s = "shfh";
+        String t = "asfhsfkh";
+
+        
+
         int[] test = {1,0,2,0,3,0,4,0,5,0,6};
 
         int i = 0;
         int j = 0;
 
         while (i < test.length){
-            if (test[i] != 0){
+            if (test[j] != 0){
                 System.out.println(test[j]);
                 j++;
             }
