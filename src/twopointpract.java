@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class twopointpract {
     public static void main(String[] args) {
 
@@ -20,20 +22,27 @@ public class twopointpract {
         String s = "shfh";
         String t = "asfhsfkh";
 
-        
+
 
         int[] test = {1,0,2,0,3,0,4,0,5,0,6};
 
         int i = 0;
-        int j = 0;
+        int e = 0;
 
         while (i < test.length){
-            if (test[j] != 0){
-                System.out.println(test[j]);
-                j++;
+            if (test[i] == 0){
+                e = i;
+                int ii = i;
+
+                while (ii < test.length){
+                    int temp = 
+                }
+                i++;
             }
-            i++;
         }
+
+        System.out.println(Arrays.toString(test));
+
 
     }
 }
