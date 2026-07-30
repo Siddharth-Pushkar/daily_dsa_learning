@@ -24,24 +24,24 @@ public class twopointpract {
 
 
 
-        int[] test = {1,0,2,0,3,0,4,0,5,0,6};
-
-        int i = 0;
-        int e = 0;
-
-        while (i < test.length){
-            if (test[i] == 0){
-                e = i;
-                int ii = i;
-
-                while (ii < test.length){
-                    int temp = 
-                }
-                i++;
-            }
-        }
-
-        System.out.println(Arrays.toString(test));
+//        int[] test = {1,0,2,0,3,0,4,0,5,0,6};
+//
+//        int i = 0;
+//        int e = 0;
+//
+//        while (i < test.length){
+//            if (test[i] == 0){
+//                e = i;
+//                int ii = i;
+//
+//                while (ii < test.length){
+//                    int temp =
+//                }
+//                i++;
+//            }
+//        }
+//
+//        System.out.println(Arrays.toString(test));
 
 
     }
