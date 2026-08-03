@@ -2,10 +2,10 @@ public class maxvovsubstring {
 
     public static void main(String[] args) {
 
-        String s = "lafhwgnerin";
+        String s = "novowels";
         int k = 3;
         int right = k;
-        int left = 0;
+        int left = 1;
         int maxvovels = 0;
         int currentvovels = 0;
 
@@ -22,12 +22,8 @@ public class maxvovsubstring {
             char chl = Character.toLowerCase(s.charAt(left));
             if (chr == 'a' || chr == 'e' || chr == 'i' || chr == 'o' || chr == 'u'){
                 currentvovels++;
-            } else {
-                currentvovels--;
             }
             if (chl == 'a' || chl == 'e' || chl == 'i' || chl == 'o' || chl == 'u'){
-                currentvovels++;
-            } else {
                 currentvovels--;
             }
             maxvovels = Math.max(currentvovels,maxvovels);
