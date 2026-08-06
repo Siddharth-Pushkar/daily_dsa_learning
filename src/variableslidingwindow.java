@@ -22,8 +22,6 @@ public class variableslidingwindow {
                 maxnrwindow = sb.size();
             }
         }
-
-
-
+        System.out.println(maxnrwindow);
     }
 }
