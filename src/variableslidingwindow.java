@@ -15,9 +15,15 @@ public class variableslidingwindow {
                 sb.remove(s.charAt(left));
                 left++;
             } else {
-
+                sb.add(s.charAt(right));
+                right++;
+            }
+            if (sb.size() > maxnrwindow){
+                maxnrwindow = sb.size();
             }
         }
+
+
 
     }
 }
