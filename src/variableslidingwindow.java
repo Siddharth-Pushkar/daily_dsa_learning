@@ -10,6 +10,9 @@ public class variableslidingwindow {
         int maxnrwindow = 0;
         HashSet<Character> sb = new HashSet<>();
 
+
+
+
         while (right<s.length()){
             if (!sb.add(s.charAt(right))){
                 sb.remove(s.charAt(left));
