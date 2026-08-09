@@ -10,23 +10,34 @@ public class maxconsecutiveones {
         String s = "egg";
         String t = "add";
         boolean isittrue = true;
-        HashMap<Character, Character> mapST = new HashMap<>();
-        HashMap<Character, Character> mapTS = new HashMap<>();
+        // This is my solution
 
-        for (int i = 0; i < s.length(); i++) {
-            char c1 = s.charAt(i);
-            char c2 = t.charAt(i);
 
-            if (mapST.containsKey(c1) && mapST.get(c1) != c2) {
-                isittrue = false;
-            }
-            if (mapTS.containsKey(c2) && mapTS.get(c2) != c1) {
-                isittrue = false;
-            }
 
-            mapST.put(c1, c2);
-            mapTS.put(c2, c1);
-        }
+
+
+
+
+
+
+
+//        HashMap<Character, Character> mapST = new HashMap<>();
+//        HashMap<Character, Character> mapTS = new HashMap<>();
+//
+//        for (int i = 0; i < s.length(); i++) {
+//            char c1 = s.charAt(i);
+//            char c2 = t.charAt(i);
+//
+//            if (mapST.containsKey(c1) && mapST.get(c1) != c2) {
+//                isittrue = false;
+//            }
+//            if (mapTS.containsKey(c2) && mapTS.get(c2) != c1) {
+//                isittrue = false;
+//            }
+//
+//            mapST.put(c1, c2);
+//            mapTS.put(c2, c1);
+//        }
 
 //        int[] indexS = new int[256];
 //        int[] indexT = new int[256];
