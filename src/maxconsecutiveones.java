@@ -12,14 +12,26 @@ public class maxconsecutiveones {
         boolean isittrue = true;
         // This is my solution
 
+        int scount = 0;
+        int tcount = 0;
+        HashMap<Character,Integer> sset = new HashMap<>();
+        HashMap<Character,Integer> tset = new HashMap<>();
 
+        for (int i = 0; i>s.length(); i++){
+            if (sset.containsKey(s.charAt(i)) == true){
+                sset.put(s.charAt(i),sset.get(i)+1);
+            } else {
+                sset.put(s.charAt(i),1);
+            }
+        }
 
-
-
-
-
-
-
+        for (int i = 0; i>t.length(); i++){
+            if (tset.containsKey(t.charAt(i)) == true){
+                tset.put(t.charAt(i),tset.get(i)+1);
+            } else {
+                tset.put(t.charAt(i),1);
+            }
+        }
 
 //        HashMap<Character, Character> mapST = new HashMap<>();
 //        HashMap<Character, Character> mapTS = new HashMap<>();
