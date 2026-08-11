@@ -17,7 +17,7 @@ public class firstunique {
         }
         for (int i = 0; i < s.length(); i++) {
             if (set.get(s.charAt(i)) == 1) {
-                System.out.println(i);
+                uniq = i;
                 break;
             }
         }
