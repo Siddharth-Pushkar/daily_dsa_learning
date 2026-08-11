@@ -9,10 +9,10 @@ public class firstunique {
         int inival = 1;
         int uniq = s.length();
         for (int i = 0; i<s.length(); i++){
-            if (set.containsKey(s.charAt(i)) == false){
+            if (!set.containsKey(s.charAt(i))){
                 set.put(s.charAt(i), inival);
             } else {
-                set.put(s.charAt(i), set.get(s.charAt(i) + 1));
+                set.put(s.charAt(i), set.get(s.charAt(i)) + 1);
             }
         }
         for (int i = 0; i<s.length(); i++){
