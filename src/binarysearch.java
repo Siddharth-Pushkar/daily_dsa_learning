@@ -5,6 +5,22 @@ public class binarysearch {
         int k = 6;
         int left = 0;
         int right = nums.length - 1;
+        int indk = 0;
+
+        while (left <= right){
+            int mid = left + (right - left)/2;
+            
+            if (nums[mid] == k){
+                indk = mid;
+                break;
+            } else if (nums[mid] < k) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+
+        System.out.println("The index of the Target is :" + indk);
 
     }
 }
