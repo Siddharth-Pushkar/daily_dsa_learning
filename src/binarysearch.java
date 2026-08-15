@@ -36,7 +36,7 @@ public class binarysearch {
 //            }
 //        }
 
-        System.out.println("The index of the Target is :" + indk);
+//        System.out.println("The index of the Target is :" + indk);
 
     }
 }
