@@ -16,6 +16,11 @@ public class binarysearch {
 //            if (nums2[mid] == t) {
 //                laenind = mid;
 //                right = mid - 1;}
+
+            if (nums[mid] == t){
+                laenind = mid;
+                left = mid + 1;
+            }
              else if (nums[mid] < t) {
                 left = mid + 1;
             } else {
