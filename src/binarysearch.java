@@ -10,18 +10,18 @@ public class binarysearch {
         int laenind = -1;
         int indk = -1;
 
-        while (left<=right){
-            int mid = left + (right-left)/2;
-
-            if (nums2[mid] == t) {
-                laenind = mid;
-                right = mid - 1;
-            } else if (nums[mid] < t) {
-                left = mid + 1;
-            } else {
-                right = mid - 1;
-            }
-        }
+//        while (left<=right){
+//            int mid = left + (right-left)/2;
+//
+//            if (nums2[mid] == t) {
+//                laenind = mid;
+//                right = mid - 1;
+//            } else if (nums[mid] < t) {
+//                left = mid + 1;
+//            } else {
+//                right = mid - 1;
+//            }
+//        }
 
         System.out.println(laenind);
 
