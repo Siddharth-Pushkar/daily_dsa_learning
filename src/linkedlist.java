@@ -4,6 +4,11 @@ public class linkedlist {
         class ListNode {
             int val;
             ListNode next;
+
+            ListNode(int i){
+                this.val = val;
+                this.next = null;
+            }
         }
 
         ListNode a = new ListNode(10);
@@ -11,9 +16,13 @@ public class linkedlist {
         ListNode c = new ListNode(30);
         ListNode d = new ListNode(40);
 
+        ListNode head = a;
+
         a.next = b;
         b.next = c;
         c.next = d;
+        ListNode current = head;
+
 
 
 
