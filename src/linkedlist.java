@@ -19,8 +19,13 @@ public class linkedlist {
         b.next = c;
         c.next = d;
         ListNode current = head;
+        int avoid = 12;
 
         while (current != null) {
+            if (current.val == avoid){
+                current = current.next;
+                continue;
+            }
             System.out.print(current.val + " ");
             current = current.next;
         }
