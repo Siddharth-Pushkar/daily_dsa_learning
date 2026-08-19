@@ -2,7 +2,7 @@ class ListNode {
     int val;
     ListNode next;
 
-    ListNode(int i){
+    ListNode(int val){
         this.val = val;
         this.next = null;
     }
@@ -14,9 +14,7 @@ public class linkedlist {
         ListNode b = new ListNode(8);
         ListNode c = new ListNode(12);
         ListNode d = new ListNode(17);
-
         ListNode head = a;
-
         a.next = b;
         b.next = c;
         c.next = d;
