@@ -16,7 +16,17 @@ public class linkedlistpractice {
         c.next = d;
         d.next = e;
         e.next = null;
+        int count = 0;
 
+        while (current != null){
 
+            System.out.print(current + " ");
+            current = current.next;
+            count++;
+        }
+
+        System.out.println();
+
+        System.out.println("Number of nodes are: "+count);
     }
 }
