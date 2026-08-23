@@ -18,11 +18,13 @@ public class linkedlistpractice {
         d.next = e;
         e.next = null;
         int count = 0;
-        int target = 40;
+        int target = 60;
+        String status = "Not Found";
 
         while (current2 != null){
-
-            System.out.print(current2.val + " ");
+            if (current2.val == target){
+                status = "Found";
+            }
             current2 = current2.next;
         }
 
@@ -33,5 +35,6 @@ public class linkedlistpractice {
         }
         System.out.println();
         System.out.println("Number of nodes are: "+count);
+        System.out.println(status);
     }
 }
