@@ -21,6 +21,10 @@ public class linkedlistpractice {
         int target = 60;
         String status = "Not Found";
 
+
+
+
+
         while (current2 != null){
             if (current2.val == target){
                 status = "Found";
