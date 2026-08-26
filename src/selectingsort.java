@@ -9,14 +9,14 @@ public class selectingsort {
         for (int i = 0; i<nums.length; i++){
             minIn = i;
             for (int j = i+1;j<nums.length;j++){
-                if (nums[j] > nums[minIn]){
+                if (nums[j] < nums[minIn]){
                     minIn = j;
 
                 }
             }
             int temp = nums[minIn];
             nums[minIn] = nums[i];
-            nums[i] = nums[minIn];
+            nums[i] = temp;
         }
         for (int x : nums){
             System.out.print(x+" ");
