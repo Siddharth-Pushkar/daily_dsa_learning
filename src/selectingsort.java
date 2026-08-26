@@ -5,11 +5,13 @@ public class selectingsort {
         int[] nums = {7,3,6,2,5};
 
         int minIn = 0;
+        int count = 0;
         for (int i = 0; i<nums.length; i++){
             minIn = i;
             for (int j = i+1;j<nums.length;j++){
                 if (nums[j] < nums[minIn]){
                     minIn = j;
+                    count++;
                 }
             }
             int temp = nums[minIn];
@@ -19,5 +21,6 @@ public class selectingsort {
         for (int x : nums){
             System.out.print(x+" ");
         }
+        System.out.println("The number of swaps made are: "+ count);
     }
 }
