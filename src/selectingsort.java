@@ -8,15 +8,13 @@ public class selectingsort {
         int minval = 0;
 
         for (int i = 0; i<nums.length; i++){
-            minIn = nums[i];
+            minval = i;
             for (int j = i+1;j<nums.length;j++){
-                if (nums[j] > minval){
-                    minval = nums[j];
+                if (nums[j] > nums[minIn]){
                     minIn = j;
 
                 }
             }
-
             int temp = nums[minIn];
             nums[minIn] = nums[i];
             nums[i] = nums[minIn];
