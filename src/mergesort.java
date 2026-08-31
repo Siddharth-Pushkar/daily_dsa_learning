@@ -17,13 +17,11 @@ public class mergesort {
             }
             k++;
         }
-
         while (i < leftlen) {
             nums[k] = lefthalf[i];
             i++;
             k++;
         }
-
         while (j < rightlen) {
             nums[k] = righthalf[j];
             j++;
