@@ -39,14 +39,22 @@ public class stacks {
     }
 
     public static void main(String[] args) {
-        int[] arr = new int[5];
         stacks s = new stacks(5);
-        int top = 0;
 
         s.push(10);
         s.push(20);
         s.push(30);
-        s.pop();
+
+        System.out.println(s.pop());      // 30
+
+        s.push(40);
+
+        System.out.println(s.peek());     // 40
+
+        System.out.println(s.pop());      // 40
+        System.out.println(s.pop());      // 20
+
+        System.out.println(s.isEmpty());  // false
 
     }
 }
