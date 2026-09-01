@@ -30,6 +30,10 @@ public class stacks {
         return tt;
     }
 
+    boolean isEmpty() {
+        return top == 0;
+    }
+
     public static void main(String[] args) {
 
     }
