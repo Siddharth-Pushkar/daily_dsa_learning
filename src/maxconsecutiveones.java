@@ -43,7 +43,7 @@ public class maxconsecutiveones {
 //            if (mapST.containsKey(c1) && mapST.get(c1) != c2) {
 //                isittrue = false;
 //            }
-//            if (mapTS.containsKey(c2) && mapTS.get(c2) != c1) {
+//            if (mapTS.containsKey(c2) && mapTS.get(c2) != c1)
 //                isittrue = false;
 //            }
 //
