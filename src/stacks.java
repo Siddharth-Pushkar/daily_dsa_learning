@@ -36,5 +36,10 @@ public class stacks {
 
     public static void main(String[] args) {
 
+
+        int[] arr = new int[5];
+        int top = 0;
+
+
     }
 }
