@@ -1,7 +1,11 @@
 public class stacks {
     private int[] arr;
-    private int capacity;
     private int top;
+
+    public stacks(int capacity) {
+        arr = new int[capacity];
+        top = 0;
+    }
 
     void push(int x) {
         if (top == arr.length) {
@@ -18,7 +22,7 @@ public class stacks {
             return -1;
         }
         top--;
-        return arr[top - 1];
+        return arr[top];
     }
 
     int peek() {
@@ -35,11 +39,14 @@ public class stacks {
     }
 
     public static void main(String[] args) {
-
-
         int[] arr = new int[5];
+        stacks s = new stacks(5);
         int top = 0;
 
+        s.push(10);
+        s.push(20);
+        s.push(30);
+        s.pop();
 
     }
 }
