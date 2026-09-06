@@ -45,16 +45,12 @@ public class stacks {
         s.push(20);
         s.push(30);
 
-        System.out.println(s.pop());      // 30
-
+        System.out.println(s.pop());
         s.push(40);
-
-        System.out.println(s.peek());     // 40
-
-        System.out.println(s.pop());      // 40
-        System.out.println(s.pop());      // 20
-
-        System.out.println(s.isEmpty());  // false
+        System.out.println(s.peek());
+        System.out.println(s.pop());
+        System.out.println(s.pop());
+        System.out.println(s.isEmpty());
 
     }
 }
