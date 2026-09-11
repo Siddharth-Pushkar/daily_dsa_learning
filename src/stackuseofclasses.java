@@ -1,3 +1,5 @@
+import sidlibs.stacks;
+
 public class stackuseofclasses {
 
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package sidlibs;
+
 public class stacks {
     public int[] arr;
     public int top;

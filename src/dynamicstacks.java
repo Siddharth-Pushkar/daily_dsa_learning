@@ -1,7 +1,9 @@
+import sidlibs.stacks;
+
 public class dynamicstacks extends stacks {
 
     public dynamicstacks(int size){
-        super(size); // it will call stacks size from this
+        super(size); // it will call sidlibs.stacks size from this
     }
     @Override
     public void push(int x) {
@@ -17,7 +19,7 @@ public class dynamicstacks extends stacks {
             arr = temp;
             top++; // it is pointing now to the next empty spot
         }
-        // then we will insert the next value into the stacks
+        // then we will insert the next value into the sidlibs.stacks
         arr[top] = x;
         top++;
     }
