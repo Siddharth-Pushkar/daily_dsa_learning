@@ -1,6 +1,6 @@
 public class stacks {
-    private int[] arr;
-    private int top;
+    public int[] arr;
+    public int top;
 
     public stacks(int capacity) {
         arr = new int[capacity];
@@ -36,6 +36,10 @@ public class stacks {
 
     public boolean isEmpty() {
         return top == 0;
+    }
+
+    public boolean isFull() {
+        return top == arr.length;
     }
 
     public static void main(String[] args) {
