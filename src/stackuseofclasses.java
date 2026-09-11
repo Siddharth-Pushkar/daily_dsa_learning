@@ -1,5 +1,3 @@
-import java.util.Stack;
-
 public class stackuseofclasses {
 
     public static void main(String[] args) {

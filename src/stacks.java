@@ -7,7 +7,7 @@ public class stacks {
         top = 0;
     }
 
-    void push(int x) {
+    public void push(int x) {
         if (top == arr.length) {
             System.out.println("Stack Overflow");
             return;
@@ -16,7 +16,7 @@ public class stacks {
         top++;
     }
 
-    int pop() {
+    public int pop() {
         if (top == 0) {
             System.out.println("Stack Underflow");
             return -1;
@@ -25,7 +25,7 @@ public class stacks {
         return arr[top];
     }
 
-    int peek() {
+    public int peek() {
         if (top == 0) {
             System.out.println("Stack is Empty");
             return -1;
@@ -34,7 +34,7 @@ public class stacks {
         return tt;
     }
 
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return top == 0;
     }
 
