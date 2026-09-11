@@ -11,13 +11,12 @@ public class dynamicstacks extends stacks {
         // this one triggers when the stack is full and then the size is increased by double to compensate.
         if (isFull() == true) {
             int[] temp = new int[arr.length * 2];
+            System.out.println("Dynamic stacks has been triggered - Length doubled");
 
             for (int i = 0; i< arr.length; i++){
                 temp[i] = arr[i];
-
             }
             arr = temp;
-            top++; // it is pointing now to the next empty spot
         }
         // then we will insert the next value into the sidlibs.stacks
         arr[top] = x;
