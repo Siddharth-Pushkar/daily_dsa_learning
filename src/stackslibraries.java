@@ -11,6 +11,7 @@ public class stackslibraries {
         stcker.push(8);
         stcker.push(8);
         stcker.push(9);
+        stcker.push(7);
 
         stger.push(2);
         stger.push(5);

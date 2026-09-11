@@ -9,7 +9,7 @@ public class stacks {
 
     public void push(int x) {
         if (top == arr.length) {
-            System.out.println("Stack Overflow");
+            System.out.println("Stack Overflow: "+ x +" could not be added");
             return;
         }
         arr[top] = x;
@@ -18,7 +18,7 @@ public class stacks {
 
     public int pop() {
         if (top == 0) {
-            System.out.println("Stack Underflow");
+            System.out.println("Stack Underflow: Pop could net be performed");
             return -1;
         }
         top--;
