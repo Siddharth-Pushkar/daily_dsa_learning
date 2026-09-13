@@ -20,5 +20,6 @@ public class queues {
 //      Here in the result the answer here is 7
 //      That means first element that will be processed is 7 and in the last is 2. LILO
         for (int i = 0;)
+            
     }
 }
