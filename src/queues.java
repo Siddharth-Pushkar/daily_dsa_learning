@@ -1,28 +1,36 @@
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Deque;
+
 
 public class queues {
 
     public static void main(String[] args) {
 
 
-        Queue<Integer> myqueue = new LinkedList<>();
-        // Adding elements here in the queues
-        myqueue.add(7);
-        myqueue.add(6);
-        myqueue.add(5);
-        myqueue.add(4);
-        myqueue.add(3);
-        myqueue.add(2);
+//        Queue<Integer> myqueue = new LinkedList<>();
+//        // Adding elements here in the queues
+//        myqueue.add(7);
+//        myqueue.add(6);
+//        myqueue.add(5);
+//        myqueue.add(4);
+//        myqueue.add(3);
+//        myqueue.add(2);
+//
+//        // Look into the whatever is the front of the queues
+//        System.out.println(myqueue.peek());
+//        System.out.println(myqueue.remove());
+//        System.out.println(myqueue.peek());
+//        System.out.println(myqueue.remove());
+//        System.out.println(myqueue.peek());
+////      Here in the result the answer here is 7
+////      That means first element that will be processed is 7 and in the last is 2. LILO
 
-        // Look into the whatever is the front of the queues
-        System.out.println(myqueue.peek());
-        System.out.println(myqueue.remove());
-        System.out.println(myqueue.peek());
-        System.out.println(myqueue.remove());
-        System.out.println(myqueue.peek());
-//      Here in the result the answer here is 7
-//      That means first element that will be processed is 7 and in the last is 2. LILO
+
+        Deque<Integer> deque = new LinkedList<>();
+        // This is the declaration of Deque aka Deck.
+        deque.addFirst(1);
+        deque.addFirst(2);
 
     }
 }
