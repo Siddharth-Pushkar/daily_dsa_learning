@@ -17,9 +17,12 @@ public class queues {
 
         // Look into the whatever is the front of the queues
         System.out.println(myqueue.peek());
+        System.out.println(myqueue.remove());
+        System.out.println(myqueue.peek());
+        System.out.println(myqueue.remove());
+        System.out.println(myqueue.peek());
 //      Here in the result the answer here is 7
 //      That means first element that will be processed is 7 and in the last is 2. LILO
-        for (int i = 0;)
-            
+
     }
 }
